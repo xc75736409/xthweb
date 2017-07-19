@@ -1,18 +1,16 @@
 import {RouterModule, Routes} from "@angular/router";
 import {NgModule} from "@angular/core";
-
+import {StatisticsComponent} from "./statistics/statistics.component";
 
 const appRoutes: Routes = [
-  /*{ path: 'crisis-center', component: CrisisListComponent },*/
-];
+  {path: '', redirectTo: 'statistics', pathMatch: 'full'},
+  { path: 'statistics', component: StatisticsComponent }
 
+];
 @NgModule({
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
-    // other imports here
+    RouterModule.forRoot( appRoutes,  { useHash: true }  )
   ],
+  exports: [RouterModule]
 })
-export class AppModule {  }
+export class AppRouter {  }

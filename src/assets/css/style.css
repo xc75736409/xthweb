@@ -1,0 +1,19 @@
+.m-t-sm{
+  margin-top: 15px;
+}
+.m-t-xs{
+  margin-top: 10px;
+}
+.thead{
+  background-color: #b6ebf1;
+  color: #10bcd2;
+}
+.thead th{
+  text-align: center;
+}
+.bgtn{
+  background-color:#10bcd2 ;
+  color: white;
+  font-size: 16px;
+  width: 150px;
+}
