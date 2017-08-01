@@ -1,0 +1,72 @@
+<div id="main">
+  <h4>查询信息</h4>
+  <div class="row">
+    <div class="col-xs-4">
+     <div class="input-group">
+       <span class="input-group-addon">姓名</span>
+       <input type="text" class="form-control" />
+     </div>
+    </div>
+    <div class="col-xs-4 col-xs-offset-1">
+      <div class="input-group">
+        <span class="input-group-addon">性别</span>
+        <input type="text" class="form-control" />
+      </div>
+    </div>
+  </div>
+  <div class="row m-t-sm">
+    <div class="col-xs-4">
+      <div class="input-group">
+        <span class="input-group-addon">电话</span>
+        <input type="text" class="form-control" />
+      </div>
+    </div>
+    <div class="col-xs-4 col-xs-offset-1">
+      <div class="input-group">
+        <span class="input-group-addon">金额</span>
+        <input type="text" class="form-control" />
+      </div>
+    </div>
+  </div>
+  <div class="row m-t-sm">
+    <div class="col-xs-4">
+      <div class="input-group">
+        <span class="input-group-addon">公司</span>
+        <input type="text" class="form-control" />
+      </div>
+    </div>
+  </div>
+  <div class="row m-t-sm">
+    <div class="col-xs-12 text-center">
+      <button class="btn btn-sm bgtn" (click)="infoquery=!infoquery">查询</button>
+    </div>
+  </div>
+  <div class="row m-t-sm" *ngIf="infoquery">
+    <div class="col-xs-12">
+      <table class="table table-striped">
+        <thead>
+        <tr class="text-center thead">
+          <th >姓名</th>
+          <th>性别</th>
+          <th>电话</th>
+          <th>金额</th>
+          <th>公司</th>
+          <th>操作</th>
+        </tr>
+        </thead>
+        <tr class="text-center">
+          <td>姓名</td>
+          <td>性别</td>
+          <td>电话</td>
+          <td>金额</td>
+          <td>公司</td>
+          <td>
+            <span><button class="btn btn-xs btn-danger">删除</button></span>
+            <span><button class="btn btn-xs btn-info">编辑</button></span>
+            <span><button class="btn btn-xs btn-danger">删除</button></span>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
